@@ -1,0 +1,137 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    transition: background-color 0.5s, color 0.5s;
+}
+.fade {
+    transition: opacity 0.5s ease-in-out;
+}
+.card {
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+input {
+    background-color:#eee;
+}
+textarea {
+    background-color:#eee;
+}
+
+ /* Add this to make dark mode work */
+body.dark {
+    background-color: #1a202c; /* خلفية داكنة */
+    color: #f7fafc; /* نص فاتح */
+}
+body.dark header {
+    background-color: #2d3748; /* لون الهيدر في الوضع الداكن */
+    color: #f7fafc; /* نص فاتح */
+}
+body.dark main {
+    background-color: #2d3748; /* لون الخلفية في القسم الرئيسي */
+    color: #f7fafc; /* نص فاتح */
+}
+body.dark section {
+    background-color: #2d3748; /* لون الخلفية في الأقسام */
+    color: #f7fafc; /* نص فاتح */
+}
+body.dark .card {
+    background-color: #2d3748; /* لون الكروت في الوضع الداكن */
+    color: #f7fafc; /* نص فاتح */
+}
+body.dark .p-4 {
+    background-color: #2d3748; /* لون الكروت في الوضع الداكن */
+    color: #f7fafc; /* نص فاتح */
+}
+body.dark p {
+    color: white;
+}
+
+
+body.dark label{
+    color: white;
+    background-color: #2d3748;
+}
+body.dark input{
+    color: white;
+    background-color: #1a202c;
+}
+body.dark textarea{
+    color: white;
+    background-color: #1a202c;
+}
+body.dark #k{
+    background-color: #2d3748;
+    color: white;
+}
+
+.search-form {
+    margin: 20px;
+  }
+  
+  .search-input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .search-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .search-results {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .search-result {
+    margin-bottom: 20px;
+  }
+  
+  .search-result h3 {
+    margin-top: 0;
+  }
+  
+  .search-result a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  .search-result a:hover {
+    color: #23527c;
+  }
+  /* Styles for the sidebar */
+#sidebar {
+    transition: transform 0.9s ease;
+}
+
+#sidebar.open {
+    display: block;
+}
+
+        /* إخفاء الروابط في الهيدر على الشاشات الصغيرة */
+        @media (max-width: 640px) {
+            #navLinks {
+                display: none; /* إخفاء الروابط */
+            }
+            #mobileHeader {
+                display: flex; /* عرض الهيدر المصغر */
+                justify-content: space-between; /* توزيع العناصر */
+                align-items: center; /* محاذاة العناصر */
+                width: 100%; /* عرض كامل */
+            }
+        }
